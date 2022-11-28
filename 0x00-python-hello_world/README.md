@@ -1,1 +1,1 @@
-project task on the python
+This project task is on python programming language
