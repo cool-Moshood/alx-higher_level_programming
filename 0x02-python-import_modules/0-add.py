@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+from add_0 import add
+
 if __name__ == "__main__":
-    from add_0 import add
-    i = 1
-    j = 2
-    x = add(i, j)
-    print(f"{i} + {j} = {x}")
+    a = 1
+    b = 2
+    x = add(a, b)
+    print(f"{a} + {b} = {x}")
