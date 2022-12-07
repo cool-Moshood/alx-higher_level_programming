@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
     new_list = my_list.copy()
-    new_list[search - 1] = replace
-    return new_list
+    if search > 0:
+        new_list[search - 1] = replace
+        return new_list
+    return my_list
