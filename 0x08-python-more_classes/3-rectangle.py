@@ -34,14 +34,6 @@ class Rectangle:
             return 0
         return (2 * self.height) + (2 * self.width)
 
-    def __repr__(self):
-        """fxn of formal representation of class
-
-        Return:
-            str: formal representation of class
-        """
-        return f"{Rectangle.__repr__}"
-
     def __str__(self):
         """ string representation of class
 
