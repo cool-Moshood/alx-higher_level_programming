@@ -83,7 +83,10 @@ class Rectangle:
     def square(cls, size=0):
         """returns a new Rectangle instance with width == height == size
         """
-        return cls(size, size)
+        p = size
+        width = p
+        height = size
+        return Rectangle(width, height)
 
     def __del__(self):
         """print bye Rectangle when deleted
