@@ -20,6 +20,3 @@ def matrix_divided(matrix, div):
 
     r = [[round(x / div, 2) for x in row] for row in matrix]
     return r
-
-
-doctest.testfile("./tests/2-matrix_divided.txt")
