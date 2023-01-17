@@ -17,4 +17,3 @@ if __name__ == "__main__":
         items = []
     items.extend(sys.argv[1:])
     save_to_json_file(items, "add_item.json")
->>>>>>> f768c7532b78cc50f99e91ac8bbbf4f5447e9349
