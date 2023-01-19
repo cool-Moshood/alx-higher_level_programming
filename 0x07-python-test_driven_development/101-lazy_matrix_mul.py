@@ -25,7 +25,7 @@ def lazy_matrix_mul(m_a, m_b):
         list: matrix_a * matrix_b
     """
 
-    return np.dot(m_a, m_b).tolist()
+    return np.matmul(m_a, m_b)
 
 
 if __name__ == '__main__':
