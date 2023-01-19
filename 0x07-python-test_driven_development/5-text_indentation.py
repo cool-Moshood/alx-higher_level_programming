@@ -11,3 +11,6 @@ def text_indentation(text):
     new_text = text.replace(".", ".\n\n").replace("?", "?\n\n").replace(
         ":", ":\n\n")
     print(new_text, end="")
+
+
+text_indentation("Holberton. School? How are you:    John")
