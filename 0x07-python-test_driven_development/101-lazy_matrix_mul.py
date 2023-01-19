@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function that multiplies 2 matrices by using the module NumPy"""
 import numpy as np
+import doctest
 
 
 def lazy_matrix_mul(m_a, m_b):
@@ -55,4 +56,8 @@ def lazy_matrix_mul(m_a, m_b):
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
-    return (np.matmul(m_a, m_b))
+    return np.dot(m_a, m_b).tolist()
+
+
+if __name__ == '__main__':
+    doctest.testfile("./tests/101-lazy_matrix_mul.txt")
