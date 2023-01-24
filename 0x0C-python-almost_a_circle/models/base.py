@@ -2,7 +2,6 @@
 """Base python class module"""
 import json
 import csv
-#import turtle
 import os.path
 
 
