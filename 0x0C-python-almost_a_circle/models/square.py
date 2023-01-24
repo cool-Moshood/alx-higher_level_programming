@@ -35,11 +35,9 @@ class Square(Rectangle):
                 elif a == 1:
                     self.size = args[1]
                 elif a == 2:
-                    self.size = args[2]
+                    self.x = args[2]
                 elif a == 3:
-                    self.x = args[3]
-                elif a == 4:
-                    self.y = args[4]
+                    self.y = args[3]
 
         elif kwargs and len(kwargs) != 0:
             for a, b in kwargs.items():
@@ -47,5 +45,4 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """Returns a dict representation of the square"""
-
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
