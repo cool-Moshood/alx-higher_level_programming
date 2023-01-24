@@ -91,8 +91,14 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout"""
+        if self.y > 0:
+            for i in range(self.y):
+                print()
+            self.y = 0
         for h in range(self.height):
             for w in range(self.width):
+                if self.y == w:
+                    print(" " * self.x, end="")
                 print("#", end="")
             print()
 
