@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Base python class module"""
-import to json
+import json
 import csv
-import turtle
+#import turtle
+import os.path
 
 
 class Base:
