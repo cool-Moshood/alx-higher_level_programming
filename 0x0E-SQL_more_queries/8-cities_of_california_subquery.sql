@@ -2,4 +2,4 @@
 -- The states table contains only one record where name = California (but the id can be different, as per the example)
 -- Results must be sorted in ascending order by cities.id
 -- You are not allowed to use the JOIN keyword
-SELECT id, name FROM cities WHERE state_id = (SELECT id from states.name = 'California') ORDER BY id;
+SELECT id, name FROM cities WHERE state_id = (SELECT id FROM name = 'California') ORDER BY id;
