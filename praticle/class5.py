@@ -46,6 +46,8 @@ class mgr:
 
 
 
+
+
 emp_1 = developer("moshood", "age", 25, "CTO")
 emp_2 = developer("olubodun", "yusuf", 23, "CFO")
 
@@ -59,3 +61,19 @@ mg_1.Print_emps
 
 # emp_1.riase
 # print(emp_1.age)
+
+
+
+if a == "id":
+                    if b is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = b
+                elif a == "width":
+                    self.width = a
+                elif a == "height":
+                    self.height = a
+                elif a == "x":
+                    self.x = a
+                elif a == "y":
+                    self.y = a
