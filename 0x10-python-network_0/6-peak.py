@@ -6,14 +6,15 @@
 def find_peak(list_of_integers):
     """ find_peak definition """
 
-    size = len(list_of_integers)
+    nums = list_of_integers
+    size = len(nums)
     if (size == 0):
         return
     mid_index = size // 2
-    if (mid_index == size - 1 or list_of_integers[mid_index] >= list_of_integers[mid_index + 1]) \
-            and (list_of_integers[mid_index] >= list_of_integers[mid_index -1] or mid_index == 0):
-        return list_of_integers[mid_index]
-    if (mid_index != size -1) and list_of_integers[mid_index + 1] > list_of_integers[mid_index]:
-        return find_peak(list_of_integers[mid_index + 1:])
+    if (mid_index == size - 1 or nums[mid_index] >= nums[mid_index + 1]) \
+            and (nums[mid_index] >= nums[mid_index -1] or mid_index == 0):
+        return nums[mid_index]
+    if (mid_index != size -1) and nums[mid_index + 1] > nums[mid_index]:
+        return find_peak(nums[mid_index + 1:])
     else:
-        return find_peak(list_of_integers[:mid_index])
+        return find_peak(nums[:mid_index])
